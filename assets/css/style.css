@@ -1,0 +1,105 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  body{
+    background-color: var(--body-bg-color);
+  }
+  .bg-desk{
+    position: relative;
+  }
+  .contents{
+   padding: 4em 4em;
+   position: absolute;
+   z-index: 10;
+   background-color: var(--body-bg-color);
+   bottom: 0;
+    top: 0;
+    left: 0;
+  }
+  .imgNews img{
+    width: 300px;
+  }
+
+  .imgDesk img{
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    
+  }
+
+  .textInfo{
+    margin-top: 12rem;
+  }
+
+  .textInfo h3{
+    color: var(--title-color);
+    font-family: Spartan, Work Sans;
+    font-size: 27px;
+    font-weight: 600;
+  }
+
+  .textInfo p {
+    line-height: 2em;
+  }
+  
+
+  .textColor{
+    color: var(--text-color);
+  }
+  .formColor{
+    color: var(--form-color);
+  }
+
+  .formColor p:nth-child(2){
+    margin: 20px 0;
+  }
+
+  form{
+    width: 140%;
+    box-shadow: 5px 10px 20px rgba(0,0,0,0.75);
+  }
+  input[type=text]{
+    height: 3em;
+    border: none;
+    border-left: 5px solid var(--title-color);
+    padding: .75em .75em;
+    
+  }
+  input[type=text]:focus{
+    outline: none;
+  }
+
+  .inlineItems{
+    display: flex;
+    margin: none;
+  }
+  .inlineItems button{
+
+    background-color: var(--bg-button-color);
+    cursor: pointer;
+    border: none;
+    width: 125px;
+    
+  }
+
+  .inlineItems button svg{
+    color:var(--text-color);
+  }
+
+  @media screen and (min-width:375px) {
+    input[type=text]{
+      width: 100%;
+    }
+  }
